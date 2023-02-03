@@ -27,12 +27,21 @@ $query->execute();
 while($d = $query->fetch())  {
 echo "<div class ='img'>";
 
+echo $d["title"]; 
+echo "<br>";
+echo "<img src=";
 echo $d["name"];
+echo ".";
+echo $d["ext"];
+echo "></img>";
 
 echo "</div>";
 
 }
 ?>
+
+
+<img id = "img1" src = "a1.png"></img>
 
 
 
