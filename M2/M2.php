@@ -25,11 +25,36 @@
   
   <!-- New member form -->
   <h2>Ajouter un(e) Argonaute</h2>
-  <form class="new-member-form">
+    <form method="post" class="new-member-form">
     <label for="name">Nom de l&apos;Argonaute</label>
     <input id="name" name="name" type="text" placeholder="Charalampos" />
+
+    <?php
+require_once("connexion.php");
+//formulaire côté back
+    
+    if ($_POST) {
+
+        if (isset($_POST["name"]) && !empty($_POST["name"])) {
+
+            $name = strip_tags($_POST["name"]);
+
+            $sql = "INSERT INTO users (name) VALUES (:name)";
+            $query = $db->prepare($sql);
+            $query->bindValue(':name', $name);
+
+            $query->execute();
+        }
+    }
+
+
+?>
+   <input type="hidden" name="id" value="<?php echo $id; ?>">
     <button type="submit">Envoyer</button>
   </form>
+
+
+
   
   <!-- Member list -->
   <h2>Membres de l'équipage</h2>
@@ -37,6 +62,7 @@
     <!--<div class="member-item">Eleftheria</div>
     <div class="member-item">Gennadios</div>
     <div class="member-item">Lysimachos</div>-->
+
  <?php
 
 require_once("connexion.php");
