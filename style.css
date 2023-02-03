@@ -1,0 +1,18 @@
+body {
+
+    background-color: rgb(234, 228, 212);
+   }
+
+h1 {
+
+display: flex;
+justify-content: space-around;
+
+}
+
+header {
+
+    background-color: black;
+    color: blue;
+    width: 100%;
+}
