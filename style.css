@@ -3,19 +3,14 @@ body {
     background-color: rgb(234, 228, 212);
    }
 
-h1 {
 
-display: flex;
-justify-content: space-around;
-
-}
 
 
 
 .img {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: start;  
 
 }
 
@@ -27,3 +22,38 @@ justify-content: space-around;
     right: 0px;
     top: 15px;
 }
+
+.imgsql {
+
+    border-radius: 10px;
+    width: 19%;
+
+
+
+}
+
+
+nav {
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 600px;
+    font-size: 18px;
+    background-color: black;
+    border-radius: 15px;
+
+   }
+
+   nav a {
+    color: rgb(213, 188, 188);
+    padding: 8px;
+    text-decoration: none;
+   }
+   nav a:hover {
+    background-color: lightgrey;
+    color: black;
+    padding: 8px;
+    border-radius: 15px;
+   }

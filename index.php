@@ -11,7 +11,27 @@
 </head>
 <body>
 
-<header> </header>
+
+<header>
+
+    <nav>
+    
+        <a href="index.php">Accueil </a>
+
+        <a href="M2.php"> Mission 2 </a>
+
+        <a href="index.php"> Mission 3 </a>
+
+        <a href="index.php"> Mission 4 </a>
+
+        <a href="index.php"> Mission 5 </a>
+
+
+    </nav>
+
+</header>
+
+
 <h1> Galerie d'images</h1>
 
 
@@ -29,11 +49,12 @@ echo "<div class ='img'>";
 
 echo $d["title"]; 
 echo "<br>";
-echo "<img src=";
+echo "<img class='imgsql' src=";
 echo $d["name"];
 echo ".";
 echo $d["ext"];
 echo "></img>";
+
 
 echo "</div>";
 
