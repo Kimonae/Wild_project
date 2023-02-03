@@ -20,7 +20,22 @@
 <?php
 require_once("connexion.php");
 
+$sql ="SELECT id, name, ext, title FROM gal";
+$query = $db->prepare($sql);
+$query->execute();
+
+while($d = $query->fetch())  {
+echo "<div class ='img'>";
+
+echo $d["name"];
+
+echo "</div>";
+
+}
 ?>
+
+
+
 
 
     
