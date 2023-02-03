@@ -46,6 +46,15 @@ label {
   padding: 0.25em 0;
 }
 
+.member-list {
+ 
+  display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ width: auto;
+
+}
+
 footer {
   margin-top: 1em;
   text-align: center;

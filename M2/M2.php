@@ -38,7 +38,7 @@ require_once("connexion.php");
         if (isset($_POST["name"]) && !empty($_POST["name"])) {
 
             $name = strip_tags($_POST["name"]);
-
+          
             $sql = "INSERT INTO users (name) VALUES (:name)";
             $query = $db->prepare($sql);
             $query->bindValue(':name', $name);
@@ -74,7 +74,12 @@ $query->execute();
 while($d = $query->fetch())  {
 
 
+   $id = $d['id'];
+   if ($id % 3 == 0)
+     echo "<br>";
+
 echo "<div class='member-item'>" . $d['name'] . "</div>";
+
 
 }
 
