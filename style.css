@@ -57,3 +57,9 @@ nav {
     padding: 8px;
     border-radius: 15px;
    }
+
+   h1 {
+
+    display: flex;
+    justify-content: space-between;
+   }
