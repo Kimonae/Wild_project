@@ -77,12 +77,12 @@ while($d = $query->fetch())  {
    echo "<tr>";
    $id = $d['id'];
    if ($id % 3 == 0) {
-     echo "<td>" ."<div class='member-item'>" . $d['name'] . "</div>" . "</td>"; } elseif 
-     ($id % 2 == 0)
+     echo "<td>" ."<div class='member-item'>" . $d['name'] . "</div>" . "</td>" ; } elseif 
+     ($id % 2 == 0 && $id % 3 !== 0)
      {
-      echo "&nbsp; &nbsp; &nbsp; &nbsp; " ."<div class='member-item'>" . $d['name'] . "</div>" . " "; }
+      echo "<tr> <td> <td> " ."<div class='member-item'>" . $d['name'] . "</div>" . "</td> </td> </tr>" ; }
       else
-     echo "<tr> <div class='member-item'>" . $d['name'] . "</div> </tr>";
+     echo "<tr> <div class='member-item'> &nbsp;" . $d['name'] . " </div> </tr>"  ;
    echo "</tr>";
      
 
