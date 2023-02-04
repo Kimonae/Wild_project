@@ -35,8 +35,6 @@
 <h1> Galerie d'images</h1>
 
 
-<div class="gal"></div>
-
 <?php
 require_once("connexion.php");
 

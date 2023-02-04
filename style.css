@@ -10,7 +10,8 @@ body {
 .img {
     display: flex;
     flex-direction: column;
-    justify-content: start;  
+    justify-content: center;
+     
 
 }
 
@@ -27,8 +28,6 @@ body {
 
     border-radius: 10px;
     width: 19%;
-
-
 
 }
 
@@ -61,5 +60,6 @@ nav {
    h1 {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 45px;
    }

@@ -82,10 +82,9 @@ while($d = $query->fetch())  {
      {
       echo "<tr> <td> <td> " ."<div class='member-item'>" . $d['name'] . "</div>" . "</td> </td> </tr>" ; }
       else
-     echo "<tr> <div class='member-item'> &nbsp;" . $d['name'] . " </div> </tr>"  ;
+     echo "<tr>  <div class='member-item'> &nbsp; " . $d['name'] . " </div> </tr>";
    echo "</tr>";
-     
-
+    
 
 
 
