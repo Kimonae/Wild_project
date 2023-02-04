@@ -62,7 +62,7 @@ require_once("connexion.php");
     <!--<div class="member-item">Eleftheria</div>
     <div class="member-item">Gennadios</div>
     <div class="member-item">Lysimachos</div>-->
-
+    <table>
  <?php
 
 require_once("connexion.php");
@@ -73,18 +73,26 @@ $query->execute();
 
 while($d = $query->fetch())  {
 
-
+ 
+   echo "<tr>";
    $id = $d['id'];
-   if ($id % 3 == 0)
-     echo "<br>";
+   if ($id % 3 == 0) {
+     echo "<td>" ."<div class='member-item'>" . $d['name'] . "</div>" . "</td>"; } elseif 
+     ($id % 2 == 0)
+     {
+      echo "&nbsp; &nbsp; &nbsp; &nbsp; " ."<div class='member-item'>" . $d['name'] . "</div>" . " "; }
+      else
+     echo "<tr> <div class='member-item'>" . $d['name'] . "</div> </tr>";
+   echo "</tr>";
+     
 
-echo "<div class='member-item'>" . $d['name'] . "</div>";
+
 
 
 }
 
 ?>
-
+ </table>
   </section>
 </main>
 

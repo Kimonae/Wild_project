@@ -18,7 +18,7 @@
     
         <a href="index.php">Accueil </a>
 
-        <a href="M2.php"> Mission 2 </a>
+        <a href="M2/M2.php"> Mission 2 </a>
 
         <a href="index.php"> Mission 3 </a>
 
@@ -62,7 +62,7 @@ echo "</div>";
 ?>
 
 
-<img id = "img1" src = "a1.png"></img>
+<img id = "img1" src = "a2.png"></img>
 
 
 
